@@ -2,7 +2,7 @@ import { FlatList } from 'react-native';
 import { ExpenseItem } from './ExpenseItem';
 
 function RenderExpenseItem(itemData) {
-  return <ExpenseItem description={itemData.item.description} amount={itemData.item.amount} date={itemData.item.date}/>;;
+  return <ExpenseItem id={itemData.item.id} description={itemData.item.description} amount={itemData.item.amount} date={itemData.item.date}/>;;
 }
 
 export function ExpensesList({ expenses }) {
